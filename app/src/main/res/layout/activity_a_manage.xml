@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back1"
+    android:background="@drawable/eth"
     tools:context=".AManage">
 
     <TextView
@@ -190,6 +190,17 @@
             app:cnb_menuResource="@menu/menu_bottom" />
 
     </RelativeLayout>
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="407dp"
+        android:layout_height="13dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:textColor="#0B0A0A"
+        tools:layout_editor_absoluteX="4dp"
+        tools:layout_editor_absoluteY="190dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

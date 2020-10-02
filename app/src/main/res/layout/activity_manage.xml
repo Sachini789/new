@@ -4,9 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back1"
+    android:background="@drawable/gray"
     tools:context=".Manage">
 
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="447dp"
+        android:layout_height="217dp"
+        app:srcCompat="@drawable/cm"
+        tools:layout_editor_absoluteX="-27dp"
+        tools:layout_editor_absoluteY="184dp" />
 
     <Button
         android:id="@+id/LogOut"
@@ -23,30 +31,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.072" />
 
-    <ImageButton
-        android:id="@+id/ProfileBtn"
-        android:layout_width="208dp"
-        android:layout_height="170dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.458"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.458"
-        app:srcCompat="@drawable/ic_baseline_supervised_user_circle_24" />
-
-    <ImageButton
-        android:id="@+id/MenuBtn"
-        android:layout_width="216dp"
-        android:layout_height="192dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.476"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.814"
-        app:srcCompat="@drawable/ic_baseline_menu_book_24" />
-
     <RelativeLayout
         android:layout_width="409dp"
         android:layout_height="72dp"
@@ -55,20 +39,23 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.995">
+        app:layout_constraintVertical_bias="0.995"/>
 
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="225dp"
+        android:layout_height="347dp"
+        app:srcCompat="@drawable/logos"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-87dp" />
 
-        <com.ismaeldivita.chipnavigation.ChipNavigationBar
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_alignParentBottom="true"
-            android:background="@drawable/bottom_nav"
-            android:elevation="16dp"
-            android:padding="8dp"
-            app:cnb_menuResource="@menu/menu_bottom" />
-
-    </RelativeLayout>
-
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="324dp"
+        android:layout_height="245dp"
+        app:srcCompat="@drawable/mm"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="423dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

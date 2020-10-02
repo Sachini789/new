@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gray"
+    tools:context=".TopEats">
+  <TableLayout
+
+      android:layout_width="410dp"
+      android:layout_height="561dp"
+      android:layout_marginBottom="4dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.421"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/tabLayout"
+      app:layout_constraintVertical_bias="0.0">
+
+    <TableRow
+        android:layout_width="447dp"
+        android:layout_height="2dp">
+
+      <SearchView
+          android:id="@+id/searchView"
+          android:layout_width="194dp"
+          android:layout_height="31dp"
+          android:layout_marginBottom="32dp"
+          android:background="#E9EDEF"
+          android:queryHint="Search" />
+
+      <Button
+          android:id="@+id/btnTopEats"
+          android:layout_width="213dp"
+          android:layout_height="wrap_content"
+          android:layout_marginBottom="8dp"
+          android:text="Back"
+          app:layout_constraintVertical_bias="0.828" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="114dp">
+
+      <ImageView
+          android:id="@+id/imageTopEats"
+          android:layout_width="181dp"
+          android:layout_height="match_parent"
+          app:srcCompat="@drawable/f5" />
+
+      <ImageView
+          android:id="@+id/specialOffers"
+          android:layout_width="192dp"
+          android:layout_height="126dp"
+          app:srcCompat="@drawable/f4" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="143dp">
+
+      <ImageView
+          android:id="@+id/imageFavorites"
+          android:layout_width="192dp"
+          android:layout_height="match_parent"
+          app:srcCompat="@drawable/f3" />
+
+      <ImageView
+          android:id="@+id/imageOurMenu"
+          android:layout_width="167dp"
+          android:layout_height="132dp"
+          app:srcCompat="@drawable/f2" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+      <ImageView
+          android:id="@+id/imageLatestDeals"
+          android:layout_width="207dp"
+          android:layout_height="136dp"
+          app:srcCompat="@drawable/f1" />
+
+      <ImageView
+          android:id="@+id/imageDiatery"
+          android:layout_width="175dp"
+          android:layout_height="match_parent"
+          app:srcCompat="@drawable/f6" />
+    </TableRow>
+  </TableLayout>
+
+  <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="192dp"
+      android:layout_height="171dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.004"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.0"
+      app:srcCompat="@drawable/logos" />
+
+  <Button
+      android:id="@+id/LogOut"
+      android:layout_width="129dp"
+      android:layout_height="38dp"
+      android:background="@drawable/customebtn"
+      android:text="@string/LogOut"
+      android:textColor="#FFFFFF"
+      android:textSize="18sp"
+      app:layout_constraintBottom_toBottomOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.943"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintVertical_bias="0.072" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

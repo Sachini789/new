@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/back1"
+    android:background="@drawable/eth"
     tools:context=".CProfile">
 
     <TextView
@@ -162,6 +162,13 @@
 
     </RelativeLayout>
 
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="218dp"
+        android:layout_height="240dp"
+        app:srcCompat="@drawable/logos"
+        tools:layout_editor_absoluteX="-8dp"
+        tools:layout_editor_absoluteY="-22dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
