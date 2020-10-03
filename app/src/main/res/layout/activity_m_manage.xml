@@ -46,7 +46,7 @@
                 android:id="@+id/imageView9"
                 android:layout_width="426dp"
                 android:layout_height="372dp"
-                app:srcCompat="@drawable/ab" />
+                android:src="@drawable/abc" />
         </TableRow>
     </TableLayout>
 
@@ -68,11 +68,15 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="199dp"
-        android:layout_height="213dp"
+        android:layout_height="156dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/tableLayout"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/tableLayout"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/logos"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="2dp"
-        tools:layout_editor_absoluteY="-12dp" />
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/allMenu"
@@ -89,12 +93,30 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.73" />
+
     <Button
         android:id="@+id/addMenu"
         android:layout_width="132dp"
         android:layout_height="39dp"
         android:background="@drawable/customebtn"
         android:text="Add Menu"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.86"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.734" />
+    <Button
+        android:id="@+id/adOurMenu"
+        android:layout_width="132dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginRight="120dp"
+        android:background="#FF9800"
+        android:text="Our Menu"
         android:textColor="#FFFFFF"
         android:textSize="18sp"
         android:textStyle="bold"

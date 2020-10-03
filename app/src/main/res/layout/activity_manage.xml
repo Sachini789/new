@@ -32,6 +32,7 @@
         app:layout_constraintVertical_bias="0.072" />
 
     <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="409dp"
         android:layout_height="72dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -39,15 +40,20 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.995"/>
+        app:layout_constraintVertical_bias="0.995" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="225dp"
-        android:layout_height="347dp"
-        app:srcCompat="@drawable/logos"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-87dp" />
+        android:layout_width="191dp"
+        android:layout_height="180dp"
+        android:layout_marginBottom="496dp"
+        app:layout_constraintBottom_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.072"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.076"
+        app:srcCompat="@drawable/logos" />
 
     <ImageView
         android:id="@+id/imageView6"

@@ -17,4 +17,5 @@
     <string name="Manage">MANAGE</string>
     <string name="demo">Image</string>
     <string name="invalid_confirm_password">Password does not match</string>
+    <string name="submarine_list">Submarine List</string>
 </resources>

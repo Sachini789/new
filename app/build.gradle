@@ -36,4 +36,15 @@ dependencies {
     implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.3.70'
     implementation 'com.basgeekball:awesome-validation:4.2'
 
+    apply plugin: 'com.google.gms.google-services'
+    implementation 'com.google.firebase:firebase-storage:19.1.1'
+    implementation 'com.google.firebase:firebase-appindexing:19.1.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.google.firebase:firebase-database:19.3.0'
+    implementation 'com.google.firebase:firebase-auth:19.3.1'
+    implementation 'com.firebase:firebase-client-android:2.5.0'
+
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+
 }
+apply plugin: 'com.google.gms.google-services'

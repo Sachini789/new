@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".menu.AddMenu">
+    tools:context=".menu.pizza.AddPizza">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -17,121 +17,87 @@
             android:layout_alignParentTop="true"
             android:orientation="vertical"
             android:layout_alignParentLeft="true">
-
             <ProgressBar
                 android:id="@+id/progress_bar"
                 style="@style/Widget.AppCompat.ProgressBar.Horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="31dp" />
+                android:layout_height="52dp" />
             <TextView
                 android:id="@+id/headerTextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:textStyle="bold"
-                android:text="Add New Payment"
+                android:text="Add Pizza"
                 android:textSize="20dp" />
 
-            <androidx.constraintlayout.widget.ConstraintLayout
+            <ImageView
+                android:id="@+id/imageView7"
                 android:layout_width="match_parent"
-                android:layout_height="136dp">
+                android:layout_height="117dp"
+                app:srcCompat="@drawable/logos" />
 
+            <EditText
+                android:id="@+id/pizzaName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:inputType="text"
+                android:hint="Name"
+                android:layout_marginLeft="16dp" />
+            <EditText
+                android:id="@+id/pizzaPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:minLines="3"
+                android:inputType="text"
+                android:hint="Price"
+                android:layout_marginLeft="16dp" />
+            <EditText
+                android:id="@+id/pizzaSize"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:minLines="3"
+                android:inputType="text"
+                android:hint="Size"
+                android:layout_marginLeft="16dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/button_choose_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:background="@color/orange"
+                    android:text="Choose"
+                    android:textColor="#fff" />
                 <ImageView
-                    android:id="@+id/imageView4"
-                    android:layout_width="204dp"
-                    android:layout_height="122dp"
-                    android:layout_marginTop="16dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/logos" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+                    android:id="@+id/chosenImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp" />
+            </LinearLayout>
 
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-            <EditText
-                android:id="@+id/finName"
-                android:layout_width="367dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:hint="Student Name"
-                android:inputType="text" />
-
-            <EditText
-                android:id="@+id/finEmail"
-                android:layout_width="365dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:hint="Email"
-                android:inputType="text"
-                android:minLines="3" />
-
-            <EditText
-                android:id="@+id/finAmountReceived"
-                android:layout_width="365dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:hint="Amount Received"
-                android:inputType="text"
-                android:minLines="3" />
-            <EditText
-                android:id="@+id/finBalance"
-                android:layout_width="365dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:hint="Balance Amount"
-                android:inputType="text"
-                android:minLines="3" />
-            <EditText
-                android:id="@+id/finBalanceToPayDate"
-                android:layout_width="365dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:hint="Due Date of Balance Payment"
-                android:inputType="text"
-                android:minLines="3" />
-            <EditText
-                android:id="@+id/findate"
-                android:layout_width="365dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:hint="Date"
-                android:inputType="text"
-                android:minLines="3" />
-            <EditText
-                android:id="@+id/finDescription"
-                android:layout_width="365dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
-                android:layout_marginLeft="16dp"
-                android:hint="Description"
-                android:inputType="text"
-                android:minLines="3" />
-
-
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="28dp" />
+                android:layout_height="29dp" />
 
             <Button
-                android:id="@+id/uploadBtnFin"
-                android:layout_width="255dp"
+                android:id="@+id/uploadBtn"
+                android:layout_width="218dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
 
-
-                android:background="#2C0367"
+                android:background="@color/orange"
                 android:gravity="center"
                 android:text="Upload"
                 android:textColor="#fff" />
         </LinearLayout>
     </ScrollView>
+
 </LinearLayout>
